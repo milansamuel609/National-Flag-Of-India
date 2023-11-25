@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Indian Flag</title>
+</head>
+<body style="background-color: blanchedalmond;">
+    <center>
+        <canvas id="canvas" width="500" height="300" style="border: 2px solid;"></canvas>
+    </center>
+    <center>
+        <b><h1 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">NATIONAL FLAG OF INDIA</h1></b>
+    </center>
+    <script>
+        var canvas = document.getElementById("canvas");
+        var cxt = canvas.getContext("2d");
+        cxt.fillStyle = "darkorange";
+        cxt.fillRect(0,0,500,100);
+        cxt.fillStyle = "white";
+        cxt.fillRect(0,100,500,200);
+        cxt.fillStyle = "green";
+        cxt.fillRect(0,200,500,100);
+
+        // FIRST 1/3 PART OF FLAG
+        cxt.beginPath();
+        cxt.moveTo(0,100);
+        cxt.lineTo(500,100);
+        cxt.stroke();
+
+        // SECOND 2/3 AND THIRD 3/3 PART OF FLAG
+        cxt.beginPath();
+        cxt.moveTo(0,200);
+        cxt.lineTo(500,200);
+        cxt.stroke();
+
+        // FIRST CENTER CIRCLE
+        cxt.beginPath();
+        cxt.fillStyle = "darkblue";
+        cxt.arc(500/2,300/2,47,0,2*Math.PI);
+        cxt.closePath();
+        cxt.fill();
+        cxt.stroke();
+
+        // SECOND CENTER CIRCLE
+        cxt.beginPath();
+        cxt.fillStyle = "white";
+        cxt.arc(500/2,300/2,40,0,2*Math.PI);
+        cxt.closePath();
+        cxt.fill();
+        cxt.stroke();
+
+        // THIRD CENTER CIRCLE
+        cxt.beginPath();
+        cxt.fillStyle = "darkblue";
+        cxt.arc(500/2,300/2,12,0,2*Math.PI);
+        cxt.closePath();
+        cxt.fill();
+        cxt.stroke();
+
+        // CENTER STROKES
+
+        // CENTER TOP LINE
+        cxt.beginPath();
+        cxt.strokeStyle = "darkblue";
+        cxt.lineWidth = 2;
+        cxt.moveTo(250,110);
+        cxt.lineTo(250,140);
+        cxt.closePath();
+        cxt.stroke();
+
+        // TOP LEFT LINE
+        cxt.beginPath();
+        cxt.strokeStyle = "darkblue";
+        cxt.lineWidth = 2;
+        cxt.moveTo(242,112);
+        cxt.lineTo(247,139);
+        cxt.closePath();
+        cxt.stroke();
+
+        // TOP SECOND LEFT LINE
+        cxt.beginPath();
+        cxt.strokeStyle = "darkblue";
+        cxt.lineWidth = 2;
+        cxt.moveTo(233,114);
+        cxt.lineTo(244,140);
+        cxt.closePath();
+        cxt.stroke();
+
+        // TOP THIRD LEFT LINE
+        cxt.beginPath();
+        cxt.strokeStyle = "darkblue";
+        cxt.lineWidth = 2;
+        cxt.moveTo(226,119);
+        cxt.lineTo(242,144);
+        cxt.closePath();
+        cxt.stroke();
+
+        // TOP FOURTH LEFT LINE
+        cxt.beginPath();
+        cxt.strokeStyle = "darkblue";
+        cxt.lineWidth = 2;
+        cxt.moveTo(218,128);
+        cxt.lineTo(240,146);
+        cxt.closePath();
+        cxt.stroke();
+
+        // TOP FIFTH LEFT LINE
+        cxt.beginPath();
+        cxt.strokeStyle = "darkblue";
+        cxt.lineWidth = 2;
+        cxt.moveTo(213,138);
+        cxt.lineTo(242,150);
+        cxt.closePath();
+        cxt.stroke();
+
+        // TOP RIGHT LINE
+        cxt.beginPath();
+        cxt.strokeStyle = "darkblue";
+        cxt.lineWidth = 2;
+        cxt.moveTo(260,112);
+        cxt.lineTo(254,140);
+        cxt.closePath();
+        cxt.stroke();
+
+        // TOP SECOND RIGHT LINE
+        cxt.beginPath();
+        cxt.strokeStyle = "darkblue";
+        cxt.lineWidth = 2;
+        cxt.moveTo(269,115);
+        cxt.lineTo(257,143);
+        cxt.closePath();
+        cxt.stroke();
+
+        // TOP THIRD RIGHT LINE
+        cxt.beginPath();
+        cxt.strokeStyle = "darkblue";
+        cxt.lineWidth = 2;
+        cxt.moveTo(281,120);
+        cxt.lineTo(258,146);
+        cxt.closePath();
+        cxt.stroke();
+
+        // TOP FOURTH RIGHT LINE
+        cxt.beginPath();
+        cxt.strokeStyle = "darkblue";
+        cxt.lineWidth = 2;
+        cxt.moveTo(290,125);
+        cxt.lineTo(258,150);
+        cxt.closePath();
+        cxt.stroke();
+
+        // TOP FIFTH RIGHT LINE
+        cxt.beginPath();
+        cxt.strokeStyle = "darkblue";
+        cxt.lineWidth = 2;
+        cxt.moveTo(293,137);
+        cxt.lineTo(262,149);
+        cxt.closePath();
+        cxt.stroke();
+
+        // CENTER BOTTOM LINE
+        cxt.beginPath();
+        cxt.strokeStyle = "darkblue";
+        cxt.lineWidth = 2;
+        cxt.moveTo(250,160);
+        cxt.lineTo(250,190);
+        cxt.closePath();
+        cxt.stroke();
+
+        // BOTTOM LEFT LINE
+        cxt.beginPath();
+        cxt.strokeStyle = "darkblue";
+        cxt.lineWidth = 2;
+        cxt.moveTo(242,190);
+        cxt.lineTo(246,160);
+        cxt.closePath();
+        cxt.stroke();
+
+        // BOTTOM SECOND LEFT LINE
+        cxt.beginPath();
+        cxt.strokeStyle = "darkblue";
+        cxt.lineWidth = 2;
+        cxt.moveTo(232,190);
+        cxt.lineTo(245,150);
+        cxt.closePath();
+        cxt.stroke();
+
+        // BOTTOM THIRD LEFT LINE
+        cxt.beginPath();
+        cxt.strokeStyle = "darkblue";
+        cxt.lineWidth = 2;
+        cxt.moveTo(221,186);
+        cxt.lineTo(247,143);
+        cxt.closePath();
+        cxt.stroke();
+
+        // BOTTOM FOURTH LEFT LINE
+        cxt.beginPath();
+        cxt.strokeStyle = "darkblue";
+        cxt.lineWidth = 2;
+        cxt.moveTo(213,175);
+        cxt.lineTo(249,145);
+        cxt.closePath();
+        cxt.stroke();
+
+        // BOTTOM FIFTH LEFT LINE
+        cxt.beginPath();
+        cxt.strokeStyle = "darkblue";
+        cxt.lineWidth = 2;
+        cxt.moveTo(208,162);
+        cxt.lineTo(252,147);
+        cxt.closePath();
+        cxt.stroke();
+
+        // BOTTOM RIGHT LINE
+        cxt.beginPath();
+        cxt.strokeStyle = "darkblue";
+        cxt.lineWidth = 2;
+        cxt.moveTo(260,190);
+        cxt.lineTo(253,155);
+        cxt.closePath();
+        cxt.stroke();
+
+        // BOTTOM SECOND RIGHT LINE
+        cxt.beginPath();
+        cxt.strokeStyle = "darkblue";
+        cxt.lineWidth = 2;
+        cxt.moveTo(271,190);
+        cxt.lineTo(256,155);
+        cxt.closePath();
+        cxt.stroke();
+
+        // BOTTOM THIRD RIGHT LINE
+        cxt.beginPath();
+        cxt.strokeStyle = "darkblue";
+        cxt.lineWidth = 2;
+        cxt.moveTo(280,182);
+        cxt.lineTo(259,155);
+        cxt.closePath();
+        cxt.stroke();
+
+        // BOTTOM FOURTH RIGHT LINE
+        cxt.beginPath();
+        cxt.strokeStyle = "darkblue";
+        cxt.lineWidth = 2;
+        cxt.moveTo(290,175);
+        cxt.lineTo(255,150);
+        cxt.closePath();
+        cxt.stroke();
+
+        // BOTTOM FIFTH RIGHT LINE
+        cxt.beginPath();
+        cxt.strokeStyle = "darkblue";
+        cxt.lineWidth = 2;
+        cxt.moveTo(290,160);
+        cxt.lineTo(245,147);
+        cxt.closePath();
+        cxt.stroke();
+
+        // CENTER 180 DEGREE LEFT LINE
+        cxt.beginPath();
+        cxt.strokeStyle = "darkblue";
+        cxt.lineWidth = 2;
+        cxt.moveTo(210,150);
+        cxt.lineTo(240,150);
+        cxt.closePath();
+        cxt.stroke();
+
+        // CENTER 180 DEGREE RIGHT LINE
+        cxt.beginPath();
+        cxt.strokeStyle = "darkblue";
+        cxt.lineWidth = 2;
+        cxt.moveTo(290,150);
+        cxt.lineTo(260,150);
+        cxt.closePath();
+        cxt.stroke();
+
+
+    </script>
+</body>
+</html>
